@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { client } from '../../contentClient';
 import { images } from '../../constants';
-import './Header.scss';
+import { AppWrap } from '../../wrapper';
 
-const exampleSkills = [images.flutter, images.node, images.python];
+import './Header.scss';
 
 const scaleVariants = {
   whileInView: {
@@ -17,9 +18,9 @@ const scaleVariants = {
   },
 };
 
-export const Header = () => {
+const Header = () => {
   return (
-    <div id="home" className="app__header app__flex">
+    <div className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -33,14 +34,12 @@ export const Header = () => {
               <h1 className="head-text">Johan</h1>
             </div>
           </div>
-
           <div className="tag-cmp app__flex">
             <p className="p-text">Software Engineer</p>
             <p className="p-text">Certified Nerd</p>
           </div>
         </div>
       </motion.div>
-
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -55,13 +54,12 @@ export const Header = () => {
           className="overlay_circle"
         />
       </motion.div>
-
       <motion.div
         variant={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {exampleSkills.map((circle, index) => (
+        {client.exampleSkills.map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>
@@ -70,3 +68,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default AppWrap(Header, 'home');
