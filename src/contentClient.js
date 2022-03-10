@@ -32,4 +32,31 @@ export const client = {
       imgUrl: images.about04,
     },
   ],
+  workCategories: ['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'],
+  works: [
+    {
+      title: 'Modern UI/UX Website',
+      description: 'A modern UI/UX portfolio website',
+      projectLink: '#',
+      codeLink: 'https://github.com/johanstech/test-portfolio-0',
+      imageUrl: images.about03,
+      tags: ['UI/UX', 'All'],
+    },
+    {
+      title: 'Sweet Restaurant Website',
+      description: 'A modern restaurant website',
+      projectLink: '#',
+      codeLink: '#',
+      imageUrl: images.about04,
+      tags: ['UI/UX', 'All'],
+    },
+    {
+      title: 'Cool Mobile App',
+      description: 'Tinder Clone built in Flutter',
+      projectLink: '#',
+      codeLink: '#',
+      imageUrl: images.about02,
+      tags: ['Mobile App', 'All'],
+    },
+  ],
 };
