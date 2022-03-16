@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { client } from '../../contentClient';
-import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
+import { images } from '../../constants';
+import { client } from '../../contentClient';
 
 import './Header.scss';
 
