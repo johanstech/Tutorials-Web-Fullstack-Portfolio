@@ -59,4 +59,58 @@ export const client = {
       tags: ['Mobile App', 'All'],
     },
   ],
+  skills: [
+    {
+      name: 'React',
+      bgColor: '#edf2f8',
+      icon: images.react,
+    },
+    {
+      name: 'Node.js',
+      bgColor: '#edf2f8',
+      icon: images.node,
+    },
+    {
+      name: 'Flutter',
+      bgColor: '#edf2f8',
+      icon: images.flutter,
+    },
+    {
+      name: 'Git',
+      bgColor: '#edf2f8',
+      icon: images.git,
+    },
+    {
+      name: 'Figma',
+      bgColor: '#edf2f8',
+      icon: images.figma,
+    },
+  ],
+  experiences: [
+    {
+      year: '2020',
+      works: [
+        {
+          name: 'Frontend Developer',
+          company: 'Google',
+          desc: 'I worked as a frontend developer at Google',
+        },
+        {
+          name: 'Blockchain Developer',
+          company: 'Facebook',
+          desc: 'I worked with Solidity',
+        },
+      ],
+    },
+    {
+      year: '2021',
+      works: [
+        {
+          name: 'Fullstack Developer',
+          company: 'Apple',
+          desc: 'I worked as a fullstack developer at Apple',
+        },
+      ],
+    },
+  ],
 };
