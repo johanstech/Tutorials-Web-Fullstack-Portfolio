@@ -39,7 +39,7 @@ export const client = {
       description: 'A modern UI/UX portfolio website',
       projectLink: '#',
       codeLink: 'https://github.com/johanstech/test-portfolio-0',
-      imageUrl: images.about03,
+      imgUrl: images.about03,
       tags: ['UI/UX', 'All'],
     },
     {
@@ -47,7 +47,7 @@ export const client = {
       description: 'A modern restaurant website',
       projectLink: '#',
       codeLink: '#',
-      imageUrl: images.about04,
+      imgUrl: images.about04,
       tags: ['UI/UX', 'All'],
     },
     {
@@ -55,7 +55,7 @@ export const client = {
       description: 'Tinder Clone built in Flutter',
       projectLink: '#',
       codeLink: '#',
-      imageUrl: images.about02,
+      imgUrl: images.about02,
       tags: ['Mobile App', 'All'],
     },
   ],
@@ -111,6 +111,44 @@ export const client = {
           desc: 'I worked as a fullstack developer at Apple',
         },
       ],
+    },
+  ],
+  testimonials: [
+    {
+      name: 'Abraham',
+      company: 'Google',
+      feedback:
+        "Great job, would recommend! Lights up the entire workplace, can't imagine someone else I'd rather work with.",
+      imgUrl: images.html,
+    },
+    {
+      name: 'Sarah',
+      company: 'Apple',
+      feedback:
+        "The best there ever was! We've never had another talent as skilled and easy to work with here at Apple before or after.",
+      imgUrl: images.css,
+    },
+  ],
+  brands: [
+    {
+      id: '0',
+      name: 'Spotify',
+      imgUrl: images.spotify,
+    },
+    {
+      id: '1',
+      name: 'New Balance',
+      imgUrl: images.nb,
+    },
+    {
+      id: '2',
+      name: 'Skype',
+      imgUrl: images.skype,
+    },
+    {
+      id: '3',
+      name: 'Bolt',
+      imgUrl: images.bolt,
     },
   ],
 };
