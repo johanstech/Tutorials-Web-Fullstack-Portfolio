@@ -1,6 +1,10 @@
 import { images } from './constants/images';
 
+//? This is my dummy client that I chose to work with instead
+//? of the Sanity CMS used in the video.
 export const client = {
+  email: 'contact@test.test',
+  mobile: '+1 (123) 456-789',
   navigationItems: [
     'home',
     'about',
